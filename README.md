@@ -15,12 +15,20 @@ Now that the normal stuff is out of the way, we hope you use it, contriubte, and
 Key contributors, both directly and indirectly: 
 
 techspence 
+
 christian-taillon 
+
 shammahwoods 
+
 BiniamGebrehiwot1 
+
 Duncan4264 
+
 flawdC0de 
+
 Kitsune-Sec 
+
+
 
 --- Key Resources / See Also ---
 
