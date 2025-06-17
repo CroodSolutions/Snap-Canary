@@ -16,6 +16,8 @@ Key contributors, both directly and indirectly:
 
 techspence 
 
+Kitsune-Sec
+
 christian-taillon 
 
 shammahwoods 
@@ -25,8 +27,7 @@ BiniamGebrehiwot1
 Duncan4264 
 
 flawdC0de 
-
-Kitsune-Sec 
+ 
 
 
 
