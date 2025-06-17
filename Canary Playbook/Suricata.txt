@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"Canary Token String Detected"; content:"Paste Canary Token Here"; nocase; sid:1000001; rev:1;)
