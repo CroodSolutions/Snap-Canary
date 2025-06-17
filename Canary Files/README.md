@@ -1,6 +1,6 @@
 # Sample Canary Files
 
-In this folder, our community will assemble multiple convincing canary files that you can deploy in your envioronment.  In each canary file, there will be the string "<Paste Canary Token Here>" and you will add your token or value you are tuning your IDS, NDR, or Custom IOA to detect.  
+In this folder, our community will assemble multiple convincing canary files that you can deploy in your envioronment.  In each canary file, there will be the string "Paste Canary Token Here" and you will add your token or value you are tuning your IDS, NDR, or Custom IOA to detect.  
 
 I suggest changing each of these files before deploying in your environment in subtle ways, to make the use of deception less obvious.  
 
