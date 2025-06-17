@@ -14,9 +14,9 @@ Now that the normal stuff is out of the way, we hope you use it, contriubte, and
 
 Key contributors, both directly and indirectly: 
 
-techspence 
-
 Kitsune-Sec
+
+techspence 
 
 christian-taillon 
 
