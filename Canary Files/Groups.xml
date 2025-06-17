@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Groups clsid="{3125A3F9-9E04-4C4E-99A1-7E62A063D2D1}">
+    <User clsid="{DFE7B3A6-CE3B-4C57-8CD7-393B6A36C6B9}" name="svc_provision" image="2" changed="2024-01-10 12:34:56" uid="{5AC81E32-7B10-4A6B-A885-4D12BB15F660}">
+        <Properties action="U" newName="" fullName="Provisioning Service Account" description="Automated Deployment Account" cpassword="AABCBcR2kdNQz7JYPLRjKQ==" changeLogon="0" noChange="1" neverExpires="1" acctDisabled="0" userName="svc_provision" passwordExpired="0"/>
+        <Groups>
+            <Group name="Administrators" action="AddToGroup"/>
+        </Groups>
+    </User>
+    <User clsid="{DFE7B3A6-CE3B-4C57-8CD7-393B6A36C6B9}" name="img_admin" image="2" changed="2024-01-10 12:35:17" uid="{Paste Canary Token Here - make it look like a GUID}">
+        <Properties action="U" newName="" fullName="Image Admin" description="Image Management Admin" cpassword="AAABAD7hsxQ3b6tGuZ9qfQ==" changeLogon="0" noChange="1" neverExpires="1" acctDisabled="0" userName="img_admin" passwordExpired="0"/>
+        <Groups>
+            <Group name="Administrators" action="AddToGroup"/>
+        </Groups>
+    </User>
+</Groups>
