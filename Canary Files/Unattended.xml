@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <settings pass="oobeSystem">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+            <TimeZone>Eastern Standard Time</TimeZone>
+            <RegisteredOrganization>Enterprise IT Department</RegisteredOrganization>
+            <RegisteredOwner>Automated Provisioning</RegisteredOwner>
+            <UserAccounts>
+                <AdministratorPassword>
+                    <Value>Qw3rty!2024Admin</Value>
+                    <PlainText>true</PlainText>
+                </AdministratorPassword>
+                <LocalAccounts>
+                    <LocalAccount wcm:action="add">
+                        <Name>svc_deploy</Name>
+                        <Group>Administrators</Group>
+                        <Password>
+                            <Value>DeployAcc#890</Value>
+                            <PlainText>true</PlainText>
+                        </Password>
+                        <Description>Deployment automation service account</Description>
+                        <DisplayName>Deployment Service</DisplayName>
+                    </LocalAccount>
+                </LocalAccounts>
+            </UserAccounts>
+            <FirstLogonCommands>
+                <SynchronousCommand wcm:action="add">
+                    <Order>1</Order>
+                    <CommandLine>\\fileserver01\images$\scripts\provision.bat</CommandLine>
+                    <Description>Run deployment script</Description>
+                </SynchronousCommand>
+            </FirstLogonCommands>
+            <AutoLogon>
+                <Username>svc_deploy</Username>
+                <Password>
+                    <Value>DeployAcc#890</Value>
+                    <PlainText>true</PlainText>
+                </Password>
+                <Enabled>true</Enabled>
+                <LogonCount>1</LogonCount>
+            </AutoLogon>
+        </component>
+    </settings>
+    <settings pass="specialize">
+        <component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="<Paste Canary Token Here>" language="neutral" versionScope="nonSxS">
+            <RunSynchronous>
+                <RunSynchronousCommand wcm:action="add">
+                    <Order>1</Order>
+                    <Path>\\fileserver01\images$\tools\DeployTool.exe</Path>
+                    <Description>Install deployment support tool</Description>
+                </RunSynchronousCommand>
+            </RunSynchronous>
+        </component>
+    </settings>
+    <cpi:offlineImage cpi:source="wim://fileserver01/images/Win10Enterprise.wim#Windows 10 Enterprise" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+</unattend>
