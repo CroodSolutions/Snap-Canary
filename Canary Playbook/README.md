@@ -1,2 +1,2 @@
-# Snap-Canary
-This project is a collection of thoughts and resources, as a few of us begin to explore ways to implement deception technologies without having to buy expensive third-party solutions.  
+# Playbook for Economical Use of Deception Technology 
+This will later include a guide and supporting resources for use of canaries and deception.  
