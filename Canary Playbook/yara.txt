@@ -1,0 +1,17 @@
+rule canary_token_detection {
+  meta:
+    author = "Your Name/Organization"
+    date = "2025-06-17" // Updated to current date
+    description = "Detects the 'Paste Canary Token Here' string, often used as a placeholder in malicious or suspicious content."
+    reference = "Based on Suricata rule for Canary Token detection"
+    version = "1.0"
+    severity = "medium" // Or "high" depending on your assessment
+    category = "placeholder" // Or "malicious", "suspicious"
+    // Add any other meta information relevant to your organization
+
+  strings:
+    $a = "Paste Canary Token Here" nocase
+
+  condition:
+    $a
+}
